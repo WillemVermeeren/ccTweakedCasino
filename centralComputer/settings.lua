@@ -1,0 +1,1 @@
+chipPrice = 0.1
