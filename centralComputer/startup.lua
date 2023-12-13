@@ -110,6 +110,14 @@ function main()
             
             term.setTextColor(colors.lightGray)
             print(" - computer "..tostring(replyChannel).." asked for the value of 1 chip")
+        elseif command=="getWithdrawalFee" then -- returns the value of 1 chip
+            
+            casinoNetwerk.transmit(replyChannel, 1, true) --sends first a true message so the sender of the command needs to get ready to receive
+            sleep(0.2)
+            casinoNetwerk.transmit(replyChannel, 1, withdrawalFee)
+            
+            term.setTextColor(colors.lightGray)
+            print(" - computer "..tostring(replyChannel).." asked for the withdrawal fee")
         elseif command=="getNewToken" then -- returns the value of 1 chip
             
             casinoNetwerk.transmit(replyChannel, 1, true) --sends first a true message so the sender of the command needs to get ready to receive

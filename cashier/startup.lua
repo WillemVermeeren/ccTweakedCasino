@@ -97,6 +97,26 @@ function getChipPrice()
 
 end
 
+function getWithdrawalFee()
+    function sendCommandLoop()
+        while true do
+            casinoNetwerk.transmit(1, os.getComputerID(), textutils.serialiseJSON({["command"]="getWithdrawalFee", ["userId"]=nil, ["attributes"]=nil}))
+            sleep(0.5)
+        end
+    end
+
+    function receiveConfirmation()
+        os.pullEvent("modem_message")
+    end
+
+    parallel.waitForAny(sendCommandLoop, receiveConfirmation)
+    
+    local event, side, channel, replyChannel, message, distance = os.pullEvent("modem_message")
+
+    return tonumber(message)
+
+end
+
 function getNewToken()
     function sendCommandLoop()
         while true do
@@ -284,6 +304,8 @@ while true do
 
 
         local chipValue = getChipPrice()
+        local withdrawalFee = getWithdrawalFee()
+
         local maxDeposit = getBalance(userId)*chipValue
         local depositValue = diamondValue/chipValue
 
@@ -332,7 +354,6 @@ while true do
 
         term.setCursorPos(monitorWidth/2-(#tostring(diamondValue)+#" krist")/2, 5)
         term.write(tostring(diamondValue).." diamonds")
-
         function menu()
             while true do
 
@@ -392,11 +413,16 @@ while true do
 
         
         if depositConfirmation then
-            while depositValue>0 do
+            local withdrawalPayement = math.ceil(diamondValue*withdrawalFee)
+            changeBalance(-withdrawalPayement, userId)
+
+            diamondValue = diamondValue-withdrawalPayement
+            
+            while diamondValue>0 do
                 
                 local subtracted = vault.pushItems(peripheral.getName(counter), 2, diamondValue)
                 changeBalance(-subtracted, userId)
-                depositValue = depositValue - subtracted
+                diamondValue = diamondValue - subtracted
 
                 if subtracted ==0 then
                     break
