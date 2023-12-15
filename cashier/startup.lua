@@ -421,7 +421,7 @@ while true do
             while diamondValue>0 do
                 
                 local subtracted = vault.pushItems(peripheral.getName(counter), 2, diamondValue)
-                changeBalance(-subtracted, userId)
+                changeBalance(-subtracted/chipValue, userId)
                 diamondValue = diamondValue - subtracted
 
                 if subtracted ==0 then
