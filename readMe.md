@@ -33,6 +33,7 @@ Screen is 3x2
 Barrel is connected to front of computer together with the maine natwork
 
 !!!Also connect a storage drawer somewhere on the network. This wil be your vault and your diamonds will be stored here!!!
+!!!You can also only attach 1 cashier to a network!!!
 
 <h3> software </h3>
 
