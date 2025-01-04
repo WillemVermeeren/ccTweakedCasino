@@ -1,3 +1,6 @@
+<h1>ccTweaked casino system</h1>
+Image of an illegal gambling den I made on a server.
+![image](https://github.com/user-attachments/assets/d31386db-cef3-43be-9972-12ede72e7917)
 
 <h2>cental computer</h2>
 This wil be the computer managing all the games and disks
