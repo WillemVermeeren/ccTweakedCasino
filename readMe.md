@@ -36,7 +36,7 @@ You can also view the profits of each machine in machineprofits.json (note that 
 ![image](https://github.com/WillemVermeeren/ccTweakedCasino/assets/104625121/06efed05-9970-4978-9f8b-b1f98076703f)
 
 Screen is 3x2
-Barrel is connected to front of computer together with the maine natwork
+Barrel is connected to front of computer together with the main natwork
 Computer facing out in the modem of the main network
 
 !!!Also connect a storage drawer somewhere on the network. This wil be your vault and your diamonds will be stored here!!!
