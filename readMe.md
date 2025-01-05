@@ -18,7 +18,7 @@ Monitor is optional but if you do, I recommend using a monitor of minimum 6 bloc
 <h3> software </h3>
 
 Install the software using the installer 
-1. wget run https://raw.githubusercontent.com/WillemVermeeren/ccTweakedCasino/main/installer.lua?token=GHSAT0AAAAAACUAXRNPSASXFTP3KGDVEJXEZUEBCEA
+1. wget run https://raw.githubusercontent.com/WillemVermeeren/ccTweakedCasino/refs/heads/main/installer.lua
 2. select cental computer using the arrowkeys
 3. press enter
    
@@ -45,7 +45,7 @@ Computer facing out in the modem of the main network
 <h3> software </h3>
 
 Install the software using the installer 
-1. wget run https://raw.githubusercontent.com/WillemVermeeren/ccTweakedCasino/main/installer.lua?token=GHSAT0AAAAAACUAXRNPSASXFTP3KGDVEJXEZUEBCEA
+1. wget run https://raw.githubusercontent.com/WillemVermeeren/ccTweakedCasino/refs/heads/main/installer.lua
 2. select cashier using the arrowkeys
 3. press enter
 
@@ -72,7 +72,7 @@ Place the modem of the main network on the front of the monitor.
 
 <h3> software </h3>
 Install the software using the installer 
-1. wget run https://raw.githubusercontent.com/WillemVermeeren/ccTweakedCasino/main/installer.lua?token=GHSAT0AAAAAACUAXRNPSASXFTP3KGDVEJXEZUEBCEA
+1. wget run https://raw.githubusercontent.com/WillemVermeeren/ccTweakedCasino/refs/heads/main/installer.lua
 2. select roulette using the arrowkeys
 3. press enter
 
@@ -96,7 +96,7 @@ Computer facing out in the modem of the main network
 
 <h3> software </h3>
 Install the software using the installer 
-1. wget run https://raw.githubusercontent.com/WillemVermeeren/ccTweakedCasino/main/installer.lua?token=GHSAT0AAAAAACUAXRNPSASXFTP3KGDVEJXEZUEBCEA
+1. wget run https://raw.githubusercontent.com/WillemVermeeren/ccTweakedCasino/refs/heads/main/installer.lua
 2. select blackjack using the arrowkeys
 3. press enter
 
